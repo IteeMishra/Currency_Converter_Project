@@ -1,0 +1,131 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("currency.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    color:white;
+   
+
+}
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    margin-bottom: 1.3rem;
+}
+.container{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 700;
+    background: transparent;
+    border:3px solid rgba(255,255,255,0.3);
+
+    
+    backdrop-filter: blur(15px);
+    border-radius: 2rem;
+    padding: 2rem ;
+}
+.amount{
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+form select, button, input{
+   font-size: 1rem;
+   /* border:none; */
+   border-radius: .75rem;
+   width: 100%;
+   padding-left:10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-color: rgb(235, 228, 228);
+   outline: none;
+   background: white;
+   color:black;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /* Change to column for responsiveness */
+    align-items: center; /* Center items for responsiveness */
+    
+    margin: 2rem;
+    gap: 2rem;
+}
+.select-container img{
+    max-width: 2rem;
+
+}
+.dropdown i {
+   font-size: 1.5rem;
+   margin-top:1rem; 
+
+}
+.select-container{
+    display:flex;
+    width: 100%; /* Set width to 100% for responsiveness */
+   border-color: black;
+   background-color: white;
+   color:black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    padding: 0.2rem 0.1rem 0.2rem 0.1rem;
+    /* border: 1px solid rgb(5, 5, 5); */
+
+}
+.msg{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+#btn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 40px;
+    cursor:pointer;
+    color:black;
+}
+select{
+    color:black;
+}
+.from p ,.to p{
+    margin-bottom: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+/* option{
+background-color: black;
+color:white;
+} */
+#btn:hover{
+    background-color: black;
+    color:white;
+    font-weight: bolder;
+}
+::placeholder{
+    color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .dropdown {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
